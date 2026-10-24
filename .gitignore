@@ -5,4 +5,4 @@ __pycache__/
 *.pyc
 .cache/
 .streamlit/secrets.toml
-data/*.pdf
+data/services.pdf
