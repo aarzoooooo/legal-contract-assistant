@@ -1,25 +1,11 @@
-from src.retriever import Retriever
-from src.loader import load_pdf, load_txt
-from src.generator import answer_question
-from src.extractor import analyze_contract
-from src.chunker import chunk_pages
-from src.config import GEMINI_API_KEY
 import hashlib
 import io
 import os
+from pathlib import Path
 
 import streamlit as st
 
-st.set_page_config(page_title="Contract Assistant",
-                   page_icon="📄", layout="wide")
-st.markdown(
-    """
-    <style>
-    html { font-size: 19px !important; }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+st.set_page_config(page_title="Contract Assistant", page_icon="📄", layout="wide")
 
 # On Streamlit Cloud the API key comes from secrets; locally it comes from .env
 try:
@@ -28,14 +14,24 @@ try:
 except Exception:
     pass  # no secrets file when running locally, which is fine
 
+from src.config import GEMINI_API_KEY
 
 if not GEMINI_API_KEY:
     st.error("GEMINI_API_KEY is missing. Add it to your .env file (or to Streamlit secrets when deployed).")
     st.stop()
 
+from src.chunker import chunk_pages
+from src.extractor import analyze_contract
+from src.generator import answer_question
+from src.loader import load_pdf, load_txt
+from src.retriever import Retriever
 
-# above this, first-time indexing takes several minutes on the free API tier
-CHUNK_WARN = 150
+CHUNK_WARN = 150   # above this, first-time indexing takes several minutes on the free API tier
+SAMPLES = {
+    "Employment offer letter (18 pages)": "data/employment_offer.pdf",
+    "Software license agreement (13 pages)": "data/license.pdf",
+    "Short sample services agreement (1 page)": "data/sample_contract.pdf",
+}
 SUGGESTIONS = {
     "Termination": "How can this agreement be terminated?",
     "Payment": "What are the payment or compensation terms?",
@@ -83,28 +79,39 @@ def render_message(msg):
 # ---------------------------------------------------------------- sidebar
 st.sidebar.title("📄 Contract Assistant")
 uploaded = st.sidebar.file_uploader("Upload a contract", type=["pdf", "txt"])
+sample = st.sidebar.selectbox(
+    "...or try a sample contract",
+    ["None"] + list(SAMPLES),
+    disabled=uploaded is not None,
+)
 st.sidebar.caption("Informational only. Not legal advice.")
 
-if uploaded is None:
+if uploaded is not None:
+    name, data = uploaded.name, uploaded.getvalue()
+elif sample != "None":
+    sample_path = Path(SAMPLES[sample])
+    if not sample_path.exists():
+        st.error(f"Sample file not found: {sample_path}")
+        st.stop()
+    name, data = sample_path.name, sample_path.read_bytes()
+else:
     st.title("Legal Contract Analysis and Retrieval Assistant")
-    st.info("Upload a contract (PDF or text) in the sidebar to get started.")
+    st.info("Upload a contract (PDF or text) in the sidebar, or pick a sample contract, to get started.")
     st.stop()
 
-data = uploaded.getvalue()
 key = hashlib.sha256(data).hexdigest()[:16]
 
 try:
-    pages, n_chunks = read_contract(uploaded.name, data)
+    pages, n_chunks = read_contract(name, data)
 except Exception as e:
     st.error(f"Could not read this file: {e}")
     st.stop()
 
-# Reset the chat and analysis when a different contract is uploaded
+# Reset the chat and analysis when a different contract is loaded
 if st.session_state.get("doc_key") != key:
     st.session_state.update(doc_key=key, messages=[], analysis=None)
 
-st.sidebar.caption(
-    f"{uploaded.name}: {len(pages)} pages, {n_chunks} sections indexed")
+st.sidebar.caption(f"{name}: {len(pages)} pages, {n_chunks} sections indexed")
 if st.sidebar.button("Clear chat"):
     st.session_state.messages = []
     st.rerun()
@@ -153,16 +160,14 @@ with tab_chat:
             result = None
             with st.spinner("Searching the contract..."):
                 try:
-                    result = answer_question(
-                        question, retriever.retrieve(question))
+                    result = answer_question(question, retriever.retrieve(question))
                 except Exception as e:
                     st.error(f"Sorry, something went wrong: {e}")
             if result:
                 st.markdown(esc(result["answer"]))
                 render_sources(result["sources"])
                 st.session_state.messages.append(
-                    {"role": "assistant",
-                        "content": result["answer"], "sources": result["sources"]}
+                    {"role": "assistant", "content": result["answer"], "sources": result["sources"]}
                 )
             else:
                 st.session_state.messages.pop()   # drop the unanswered question
@@ -218,8 +223,7 @@ with tab_analysis:
         st.subheader("Potential risks")
         if analysis.risks:
             for r in sorted(analysis.risks, key=lambda r: SEVERITY_ORDER[r.severity]):
-                st.markdown(
-                    f"{SEVERITY_ICON[r.severity]} **{r.severity.upper()}**: {esc(r.description)}")
+                st.markdown(f"{SEVERITY_ICON[r.severity]} **{r.severity.upper()}**: {esc(r.description)}")
                 st.caption(esc(f"{r.reason} (Section: {r.source_section})"))
         else:
             st.caption("None found in the retrieved clauses.")
@@ -230,5 +234,4 @@ with tab_analysis:
             file_name="contract_analysis.json",
             mime="application/json",
         )
-        st.caption(
-            "Risks are an automated first-pass opinion based on the retrieved clauses. Not legal advice.")
+        st.caption("Risks are an automated first-pass opinion based on the retrieved clauses. Not legal advice.")
