@@ -1,0 +1,258 @@
+[
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "What is the annual base salary?",
+    "answerable": true,
+    "evidence": "$530,000",
+    "answer_has": [
+      "530,000"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "How often is the salary paid?",
+    "answerable": true,
+    "evidence": "15th of each month",
+    "answer_has": [
+      "1st and 15th",
+      "semi-monthly",
+      "twice a month"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "What is the maximum annual bonus?",
+    "answerable": true,
+    "evidence": "up to 40%",
+    "answer_has": [
+      "40%",
+      "40 percent"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "By what date must the employee start?",
+    "answerable": true,
+    "evidence": "September 3, 2024",
+    "answer_has": [
+      "september 3"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "How many stock options may be granted?",
+    "answerable": true,
+    "evidence": "150,300 shares",
+    "answer_has": [
+      "150,300"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "Which law governs this agreement?",
+    "answerable": true,
+    "evidence": "Commonwealth of Massachusetts",
+    "answer_has": [
+      "massachusetts"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "How much notice must the employee give before starting a new business activity?",
+    "answerable": true,
+    "evidence": "(10) business days",
+    "answer_has": [
+      "10 business days",
+      "ten business days",
+      "(10) business days",
+      "ten (10)"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "By how long can the non-competition restrictions be extended if the employee breaches a fiduciary duty?",
+    "answerable": true,
+    "evidence": "extended to two (2) years",
+    "answer_has": [
+      "two years",
+      "two (2) years",
+      "2 years"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "How much vacation or time off does the company provide?",
+    "answerable": true,
+    "evidence": "does not offer a specific number of vacation",
+    "answer_has": [
+      "open",
+      "no specific",
+      "does not offer a specific",
+      "discretion",
+      "unlimited"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "What background checks is the offer contingent on?",
+    "answerable": true,
+    "evidence": "two satisfactory professional references",
+    "answer_has": [
+      "reference"
+    ]
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "What is the limit of liability?",
+    "answerable": false
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "Is there an arbitration clause?",
+    "answerable": false
+  },
+  {
+    "contract": "data/employment_offer.pdf",
+    "question": "What relocation assistance is provided?",
+    "answerable": false
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "How long is the initial term of the agreement?",
+    "answerable": true,
+    "evidence": "Third anniversary",
+    "answer_has": [
+      "three years",
+      "three-year",
+      "third anniversary",
+      "3 years",
+      "3-year",
+      "three (3)"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "How much notice is needed to stop the agreement from renewing automatically?",
+    "answerable": true,
+    "evidence": "ninety (90) days before the end",
+    "answer_has": [
+      "90",
+      "ninety"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "How long does a party have to cure a material breach?",
+    "answerable": true,
+    "evidence": "fifteen (15) days",
+    "answer_has": [
+      "15",
+      "fifteen"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "What interest is charged on late payments?",
+    "answerable": true,
+    "evidence": "1 1/2 percent per month",
+    "answer_has": [
+      "1 1/2",
+      "1.5",
+      "one and a half",
+      "one-and-a-half"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "When is payment for support services due?",
+    "answerable": true,
+    "evidence": "due and payable within 30 days",
+    "answer_has": [
+      "30 days",
+      "thirty"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "Which state's law governs the agreement?",
+    "answerable": true,
+    "evidence": "State of Michigan",
+    "answer_has": [
+      "michigan"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "How many days after termination must the licensee return the software?",
+    "answerable": true,
+    "evidence": "within 14 days of termination",
+    "answer_has": [
+      "14 days",
+      "fourteen"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "When is a mailed notice considered delivered?",
+    "answerable": true,
+    "evidence": "three (3) days after posted",
+    "answer_has": [
+      "three days",
+      "3 days",
+      "three (3) days"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "Do payment obligations get excused by force majeure?",
+    "answerable": true,
+    "evidence": "Except for payment obligations",
+    "answer_has": [
+      "except",
+      "not excused",
+      "excluded",
+      "does not apply",
+      "do not apply"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "What is RTL not liable for?",
+    "answerable": true,
+    "evidence": "loss of data, profits or use",
+    "answer_has": [
+      "loss of data",
+      "profits"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "What happens if a bankruptcy petition is filed against a party?",
+    "answerable": true,
+    "evidence": "not dismissed within sixty (60) days",
+    "answer_has": [
+      "60",
+      "sixty"
+    ]
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "Is there an arbitration clause?",
+    "answerable": false
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "What insurance must the licensee carry?",
+    "answerable": false
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "Is the source code held in escrow?",
+    "answerable": false
+  },
+  {
+    "contract": "data/license.pdf",
+    "question": "What is the capital of France?",
+    "answerable": false
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "n": 1,
+    "contract": "employment_offer.pdf",
+    "question": "What is the annual base salary?",
+    "answerable": true,
+    "top_score": 0.722,
+    "top_section": "3. Salary.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 2,
+    "contract": "employment_offer.pdf",
+    "question": "How often is the salary paid?",
+    "answerable": true,
+    "top_score": 0.726,
+    "top_section": "3. Salary.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 3,
+    "contract": "employment_offer.pdf",
+    "question": "What is the maximum annual bonus?",
+    "answerable": true,
+    "top_score": 0.723,
+    "top_section": "4. Annual Bonus.",
+    "kept": 2,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 4,
+    "contract": "employment_offer.pdf",
+    "question": "By what date must the employee start?",
+    "answerable": true,
+    "top_score": 0.766,
+    "top_section": "2. Start Date.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 5,
+    "contract": "employment_offer.pdf",
+    "question": "How many stock options may be granted?",
+    "answerable": true,
+    "top_score": 0.637,
+    "top_section": "Appendix A > 1. Non-Competition. > (c) Additional Consideration for Non-Competition Restrictions.",
+    "kept": 2,
+    "rank": 2,
+    "kept_hit": true
+  },
+  {
+    "n": 6,
+    "contract": "employment_offer.pdf",
+    "question": "Which law governs this agreement?",
+    "answerable": true,
+    "top_score": 0.759,
+    "top_section": "Appendix B > 7. Miscellaneous. > (g) Governing Law.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 7,
+    "contract": "employment_offer.pdf",
+    "question": "How much notice must the employee give before starting a new business activity?",
+    "answerable": true,
+    "top_score": 0.76,
+    "top_section": "Appendix A > 3. Notice of New Business Activities.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 8,
+    "contract": "employment_offer.pdf",
+    "question": "By how long can the non-competition restrictions be extended if the employee breaches a fiduciary duty?",
+    "answerable": true,
+    "top_score": 0.745,
+    "top_section": "Appendix A > 1. Non-Competition. > (b) Certain Definitions.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 9,
+    "contract": "employment_offer.pdf",
+    "question": "How much vacation or time off does the company provide?",
+    "answerable": true,
+    "top_score": 0.757,
+    "top_section": "7. Time Off Benefit.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 10,
+    "contract": "employment_offer.pdf",
+    "question": "What background checks is the offer contingent on?",
+    "answerable": true,
+    "top_score": 0.753,
+    "top_section": "13. Contingency.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 11,
+    "contract": "employment_offer.pdf",
+    "question": "What is the limit of liability?",
+    "answerable": false,
+    "top_score": 0.638,
+    "top_section": "Appendix B > 7. Miscellaneous. > (e) Severability.",
+    "kept": 3,
+    "filtered": false
+  },
+  {
+    "n": 12,
+    "contract": "employment_offer.pdf",
+    "question": "Is there an arbitration clause?",
+    "answerable": false,
+    "top_score": 0.683,
+    "top_section": "Appendix B > 7. Miscellaneous. > (g) Governing Law.",
+    "kept": 4,
+    "filtered": false
+  },
+  {
+    "n": 13,
+    "contract": "employment_offer.pdf",
+    "question": "What relocation assistance is provided?",
+    "answerable": false,
+    "top_score": 0.643,
+    "top_section": "6. Benefits.",
+    "kept": 4,
+    "filtered": false
+  },
+  {
+    "n": 14,
+    "contract": "license.pdf",
+    "question": "How long is the initial term of the agreement?",
+    "answerable": true,
+    "top_score": 0.782,
+    "top_section": "7. TERM AND TERMINATION.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 15,
+    "contract": "license.pdf",
+    "question": "How much notice is needed to stop the agreement from renewing automatically?",
+    "answerable": true,
+    "top_score": 0.709,
+    "top_section": "7. TERM AND TERMINATION.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 16,
+    "contract": "license.pdf",
+    "question": "How long does a party have to cure a material breach?",
+    "answerable": true,
+    "top_score": 0.668,
+    "top_section": "12.1 Waiver.",
+    "kept": 4,
+    "rank": 4,
+    "kept_hit": true
+  },
+  {
+    "n": 17,
+    "contract": "license.pdf",
+    "question": "What interest is charged on late payments?",
+    "answerable": true,
+    "top_score": 0.668,
+    "top_section": "7. TERM AND TERMINATION.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 18,
+    "contract": "license.pdf",
+    "question": "When is payment for support services due?",
+    "answerable": true,
+    "top_score": 0.713,
+    "top_section": "5.2 Service Fees.",
+    "kept": 4,
+    "rank": 2,
+    "kept_hit": true
+  },
+  {
+    "n": 19,
+    "contract": "license.pdf",
+    "question": "Which state's law governs the agreement?",
+    "answerable": true,
+    "top_score": 0.747,
+    "top_section": "12.2 Governing Law.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 20,
+    "contract": "license.pdf",
+    "question": "How many days after termination must the licensee return the software?",
+    "answerable": true,
+    "top_score": 0.765,
+    "top_section": "7.1 Duties upon Termination or Expiration.",
+    "kept": 4,
+    "rank": 3,
+    "kept_hit": true
+  },
+  {
+    "n": 21,
+    "contract": "license.pdf",
+    "question": "When is a mailed notice considered delivered?",
+    "answerable": true,
+    "top_score": 0.671,
+    "top_section": "12.5 Notices.",
+    "kept": 3,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 22,
+    "contract": "license.pdf",
+    "question": "Do payment obligations get excused by force majeure?",
+    "answerable": true,
+    "top_score": 0.722,
+    "top_section": "12.6 Force Majeure.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 23,
+    "contract": "license.pdf",
+    "question": "What is RTL not liable for?",
+    "answerable": true,
+    "top_score": 0.812,
+    "top_section": "9.1 Limitation of Liability.",
+    "kept": 4,
+    "rank": 1,
+    "kept_hit": true
+  },
+  {
+    "n": 24,
+    "contract": "license.pdf",
+    "question": "What happens if a bankruptcy petition is filed against a party?",
+    "answerable": true,
+    "top_score": 0.615,
+    "top_section": "7. TERM AND TERMINATION.",
+    "kept": 0,
+    "rank": 1,
+    "kept_hit": false
+  },
+  {
+    "n": 25,
+    "contract": "license.pdf",
+    "question": "Is there an arbitration clause?",
+    "answerable": false,
+    "top_score": 0.691,
+    "top_section": "12.2 Governing Law.",
+    "kept": 4,
+    "filtered": false
+  },
+  {
+    "n": 26,
+    "contract": "license.pdf",
+    "question": "What insurance must the licensee carry?",
+    "answerable": false,
+    "top_score": 0.637,
+    "top_section": "9.5 Indemnity by RTL",
+    "kept": 4,
+    "filtered": false
+  },
+  {
+    "n": 27,
+    "contract": "license.pdf",
+    "question": "Is the source code held in escrow?",
+    "answerable": false,
+    "top_score": 0.663,
+    "top_section": "3.5 Backups.",
+    "kept": 4,
+    "filtered": false
+  },
+  {
+    "n": 28,
+    "contract": "license.pdf",
+    "question": "What is the capital of France?",
+    "answerable": false,
+    "top_score": 0.559,
+    "top_section": "9.5 Indemnity by RTL",
+    "kept": 0,
+    "filtered": true
+  }
+]
