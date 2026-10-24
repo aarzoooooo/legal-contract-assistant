@@ -29,6 +29,7 @@ SYSTEM_PROMPT = f"""You are a contract review assistant. Answer the user's quest
 Rules:
 - Base every statement on the excerpts. Do not use outside knowledge or assumptions.
 - Cite the source for each claim like this: (Source 2, Section 4. Termination, p.1).
+- Answer only if an excerpt directly addresses what was asked. An excerpt that merely shares a word with the question, or covers a loosely related topic, does not count (for example, a confidentiality clause does not answer a question about payment terms). In that case reply exactly: "{NOT_FOUND}"
 - If the excerpts do not contain the answer, reply exactly: "{NOT_FOUND}"
 - If the excerpts only partly answer the question, answer the supported part and clearly say what is missing.
 - Quote key figures (amounts, dates, notice periods) exactly as written.
@@ -38,8 +39,7 @@ Rules:
 def build_context(results) -> str:
     parts = []
     for i, (chunk, _score) in enumerate(results, start=1):
-        parts.append(
-            f"[Source {i} | {chunk.section} | page {chunk.page}]\n{chunk.text}")
+        parts.append(f"[Source {i} | {chunk.section} | page {chunk.page}]\n{chunk.text}")
     return "\n\n".join(parts)
 
 
@@ -60,14 +60,12 @@ def generate_with_retry(
     config = types.GenerateContentConfig(**config_kwargs)
 
     last_error = None
-    # no duplicates
-    models = list(dict.fromkeys((GENERATION_MODEL, FALLBACK_MODEL)))
+    models = list(dict.fromkeys((GENERATION_MODEL, FALLBACK_MODEL)))  # no duplicates
 
     for model in models:
         for attempt in range(max_retries):
             try:
-                print(
-                    f"[info] calling {model} (attempt {attempt + 1}/{max_retries})")
+                print(f"[info] calling {model} (attempt {attempt + 1}/{max_retries})")
                 resp = client.models.generate_content(
                     model=model, contents=prompt, config=config
                 )
@@ -80,16 +78,14 @@ def generate_with_retry(
                 if e.code in RETRYABLE_CODES:
                     print(f"[retry] {model} returned {e.code}")
                 elif e.code == 404:
-                    print(
-                        f"[warn] {model} is not available (404), trying next model")
+                    print(f"[warn] {model} is not available (404), trying next model")
                     break
                 else:
                     raise                       # e.g. bad API key: retrying won't help
             time.sleep(2 ** attempt)            # wait 1s, 2s
         print(f"[warn] giving up on {model}")
 
-    raise RuntimeError(
-        f"Gemini is currently unavailable. Last error: {last_error}")
+    raise RuntimeError(f"Gemini is currently unavailable. Last error: {last_error}")
 
 
 def answer_question(question: str, results) -> dict:
@@ -109,8 +105,7 @@ def answer_question(question: str, results) -> dict:
     return {
         "answer": answer,
         "sources": [
-            {"section": c.section, "page": c.page,
-                "score": round(s, 3), "text": c.text}
+            {"section": c.section, "page": c.page, "score": round(s, 3), "text": c.text}
             for c, s in results
         ],
     }

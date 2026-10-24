@@ -8,7 +8,10 @@
     "top_section": "3. Salary.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "The annual base salary is an annualized rate of \"$530,000 per year,\" paid at a rate of \"$22,083.33 per regular semi-monthly pay period\" (Source 1, 3. Salary., p.1).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 2,
@@ -19,7 +22,10 @@
     "top_section": "3. Salary.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, your salary is paid on the \"1st and 15th of each month\" (Source 1, Section 3. Salary., p. 1). It is paid at the rate of \"$22,083.33 per regular semi-monthly pay period\" in accordance with the Company's regular payroll practices (Source 1, Section 3. Salary., p. 1). \n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 3,
@@ -28,9 +34,12 @@
     "answerable": true,
     "top_score": 0.723,
     "top_section": "4. Annual Bonus.",
-    "kept": 2,
+    "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the contract, you will be eligible to receive an annual incentive bonus of \"up to 40% of your gross base pay during that fiscal year; provided, however, that for 2024 you will be eligible for an annual incentive bonus of up to 40% of your full annualized base salary for 2024\" (Source 1, Section 4. Annual Bonus, p.1).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 4,
@@ -41,7 +50,10 @@
     "top_section": "2. Start Date.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, your employment will begin on a date mutually agreed upon by you and the Company (the \"Start Date\"), which \"shall in no event be later than September 3, 2024\" (Source 1, Section 2. Start Date, p. 1).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 5,
@@ -52,7 +64,10 @@
     "top_section": "Appendix A > 1. Non-Competition. > (c) Additional Consideration for Non-Competition Restrictions.",
     "kept": 2,
     "rank": 2,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, the Company may grant you an option for the purchase of \"an aggregate of 150,300 shares of common stock of the Company\" (Source 2, Section 5. Equity, p. 1).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 6,
@@ -63,7 +78,10 @@
     "top_section": "Appendix B > 7. Miscellaneous. > (g) Governing Law.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Both agreements are governed by and construed in accordance with the laws of the Commonwealth of Massachusetts (without reference to the conflicts of laws provisions thereof) (Source 1, Appendix B > 7. Miscellaneous. > (g) Governing Law., p. 15; Source 2, Appendix A > 4. Miscellaneous. > (j) Governing Law and Consent To Jurisdiction., p. 9).\n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 7,
@@ -74,7 +92,10 @@
     "top_section": "Appendix A > 3. Notice of New Business Activities.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, the Employee must give notice to the Company of each new business activity at least \"(10) business days prior to beginning any such activity\" (Source 1, Appendix A > 3. Notice of New Business Activities., p. 7). \n\nThis is an informational summary, not legal advice.",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 8,
@@ -85,7 +106,10 @@
     "top_section": "Appendix A > 1. Non-Competition. > (b) Certain Definitions.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract, the non-competition restrictions shall automatically be extended to \"two (2) years\" following the cessation of the Employee's employment if the Employee breaches a fiduciary duty to the Company (Source 1, Appendix A > 1. Non-Competition. > (b) Certain Definitions., p. 5).\n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 9,
@@ -96,7 +120,10 @@
     "top_section": "7. Time Off Benefit.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract, the Company does not offer a specific number of vacation, personal, or sick days. Instead, it has \"an open policy of taking days off based on an employee’s reasonable discretion and prior approval from the employee’s manager with as much advance notice as possible as outlined in the Personal Time Off (PTO) policy\" (Source 1, Section 7. Time Off Benefit., p. 2).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 10,
@@ -107,7 +134,10 @@
     "top_section": "13. Contingency.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, the offer is subject to \"satisfactory background and reference checks, including our receiving at least two satisfactory professional references\" (Source 1, 13. Contingency., p. 3).\n\n*This is an informational summary, not legal advice.*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 11,
@@ -116,8 +146,11 @@
     "answerable": false,
     "top_score": 0.638,
     "top_section": "Appendix B > 7. Miscellaneous. > (e) Severability.",
-    "kept": 3,
-    "filtered": false
+    "kept": 4,
+    "filtered": false,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   },
   {
     "n": 12,
@@ -127,7 +160,10 @@
     "top_score": 0.683,
     "top_section": "Appendix B > 7. Miscellaneous. > (g) Governing Law.",
     "kept": 4,
-    "filtered": false
+    "filtered": false,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   },
   {
     "n": 13,
@@ -137,7 +173,10 @@
     "top_score": 0.643,
     "top_section": "6. Benefits.",
     "kept": 4,
-    "filtered": false
+    "filtered": false,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   },
   {
     "n": 14,
@@ -148,7 +187,10 @@
     "top_section": "7. TERM AND TERMINATION.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "The Initial Term of the Agreement continues \"through the Third anniversary of the Effective Date\" (Source 1, 7. TERM AND TERMINATION., p.3).\n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 15,
@@ -159,7 +201,10 @@
     "top_section": "7. TERM AND TERMINATION.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "To prevent the agreement from renewing automatically, either party must notify the other in writing \"no fewer than ninety (90) days before the end of the Initial Term or any Renewal Term\" (Source 1, Section 7. TERM AND TERMINATION., p. 3).\n\n*This is an informational summary, not legal advice.*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 16,
@@ -170,7 +215,10 @@
     "top_section": "12.1 Waiver.",
     "kept": 4,
     "rank": 4,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "A party has \"fifteen (15) days\" of the receipt of written notice of a material breach from the non-breaching party to cure such breach (Source 4, Section 7. TERM AND TERMINATION, p.3).\n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 17,
@@ -181,7 +229,10 @@
     "top_section": "7. TERM AND TERMINATION.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, any amounts due to RTL that are not paid within \"30 days\" after they are due shall incur interest at the rate of \"1 1/2 percent per month\", calculated from the date payment is originally due until the date payment is made in full (Source 1, Section 7. TERM AND TERMINATION., p. 4).\n\nThis is an informational summary, not legal advice.",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 18,
@@ -192,7 +243,10 @@
     "top_section": "5.2 Service Fees.",
     "kept": 4,
     "rank": 2,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Payment for Support Services is due within \"30 days of RTL's invoicing for them\" (Source 2, Section 5.4 Payment Terms, p. 3). Additionally, Exhibit A notes that billing for Support Services \"will commence upon deployment of the Software\" and that DISTRIBUTOR will bill LICENSEE \"each month according to the revenue schedule as provided by LICENSEE in South African Rand for the US Dollar equivalent as specified by the terms of this Agreement and related Exhibits as set at the date of invoice\" (Source 3, Exhibit A, p. 10).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 19,
@@ -203,7 +257,10 @@
     "top_section": "12.2 Governing Law.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, the agreement is governed by the laws of the State of Michigan, USA (Source 1, Section 12.2 Governing Law, p. 7).\n\n*This is an informational summary, not legal advice.*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 20,
@@ -214,7 +271,10 @@
     "top_section": "7.1 Duties upon Termination or Expiration.",
     "kept": 4,
     "rank": 3,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract, LICENSEE must return the Software to RTL within \"14 days\" of termination (Source 3, Section 7. TERM AND TERMINATION, p. 3).\n\n*This is an informational summary, not legal advice.*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 21,
@@ -223,9 +283,12 @@
     "answerable": true,
     "top_score": 0.671,
     "top_section": "12.5 Notices.",
-    "kept": 3,
+    "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "A mailed notice is considered properly given \"three (3) days after posted\" (Source 1, Section 12.5 Notices, p. 7). \n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 22,
@@ -236,7 +299,10 @@
     "top_section": "12.6 Force Majeure.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "No, payment obligations are expressly excluded from force majeure (Source 1, Section 12.6 Force Majeure, p. 9).",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 23,
@@ -247,7 +313,10 @@
     "top_section": "9.1 Limitation of Liability.",
     "kept": 4,
     "rank": 1,
-    "kept_hit": true
+    "kept_hit": true,
+    "answer": "Based on the provided contract excerpts, RTL shall in no event be liable for:\n- Any loss of data, profits, or use of (or inability to use) the software (Source 1, Section 9.1 Limitation of Liability, p. 5).\n- Damages resulting from loss of, unauthorized access to, or alteration of licensee’s transmissions (Source 1, Section 9.1 Limitation of Liability, p. 5).\n- Any loss of data due to software errors, as it is the licensee's responsibility to have adequate backup procedures (Source 2, Section 9.4 Warranty by LICENSEE, p. 6).\n- The cost of procurement of substitute goods and services, or for any special, incidental, indirect, punitive, or consequential damages however caused and regardless of the theory of liability, arising out of or in connection with the use or performance of the software (Source 4, Section 9.4 Warranty by LICENSEE, p. 5).\n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 24,
@@ -256,9 +325,12 @@
     "answerable": true,
     "top_score": 0.615,
     "top_section": "7. TERM AND TERMINATION.",
-    "kept": 0,
+    "kept": 2,
     "rank": 1,
-    "kept_hit": false
+    "kept_hit": true,
+    "answer": "Based on the provided contract, if a bankruptcy petition is filed against a party, either party may terminate the agreement immediately, provided that such petition is not dismissed within \"sixty (60) days\" (Source 1, Section 7. Term and Termination, p. 3). \n\n*(This is an informational summary, not legal advice.)*",
+    "error": null,
+    "answer_ok": true
   },
   {
     "n": 25,
@@ -268,7 +340,10 @@
     "top_score": 0.691,
     "top_section": "12.2 Governing Law.",
     "kept": 4,
-    "filtered": false
+    "filtered": false,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   },
   {
     "n": 26,
@@ -278,7 +353,10 @@
     "top_score": 0.637,
     "top_section": "9.5 Indemnity by RTL",
     "kept": 4,
-    "filtered": false
+    "filtered": false,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   },
   {
     "n": 27,
@@ -288,7 +366,10 @@
     "top_score": 0.663,
     "top_section": "3.5 Backups.",
     "kept": 4,
-    "filtered": false
+    "filtered": false,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   },
   {
     "n": 28,
@@ -298,6 +379,9 @@
     "top_score": 0.559,
     "top_section": "9.5 Indemnity by RTL",
     "kept": 0,
-    "filtered": true
+    "filtered": true,
+    "answer": "I couldn't find this in the uploaded contract.",
+    "error": null,
+    "refused": true
   }
 ]
